@@ -507,9 +507,63 @@ object-position: top;
   height: 750px;
 }
 
+/* resonsive block */
+.responsiveBlock {
+  display: none;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+.responsiveBlock .flex {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.responsiveBlock .textRight {
+  width: 100%;
+  margin-left: 0;
+  text-align: center;
+}
+
+.responsiveBlock .textLeft {
+  width: 100%;
+  margin-left: 0;
+  text-align: center;
+}
+
+.responsiveBlock .desktopRight {
+  width: 100%;
+}
+
+.responsiveBlock .desktopLeft {
+  width: 100%;
+}
+
 @media (max-width: 450px) {
   #left iframe {
     width: 95%;
+  }
+
+  .responsiveBlock {
+    display: block;
+  }
+
+  .responsiveBlock .flex {
+    width: 100%;
+  }
+
+  .newBlock {
+    display: none;
+  }
+
+  .responsiveBlock .textRight {
+    text-align: center;
+  }
+
+  .responsiveBlock .textLeft {
+    text-align: center;
   }
 }
 
@@ -527,9 +581,17 @@ object-position: top;
   line-height: 20px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
   #right {
     width: 80%;
+  }
+
+  .responsiveBlock {
+    display: block;
+  }
+
+  .newBlock {
+    display: none;
   }
 }
 
@@ -563,6 +625,7 @@ object-position: top;
   font-weight: bold;
   margin: auto;
   width: 17em;
+  margin-top: 2%;
 }
 
 #right a:hover {
@@ -674,6 +737,7 @@ p a:hover {
   transition: all 0.5s;
 }
 
+
 /* Add a grey background color on mouse-over */
 /* .btn:hover {
   background-color: #ddd;
@@ -729,7 +793,7 @@ p a:hover {
 .flex {
   display: flex;
   flex-direction: row;
-  width: 70%;
+  width: 80%;
   margin: 0 auto 150px;
 }
 
@@ -737,12 +801,10 @@ p a:hover {
 .desktopLeft {
   width: 50%;
   height: 300px;
-
 }
 
 .desktopLeft img {
-  width: 550px;
-  height: 350px;
+  width: 100%
 }
 
 .textRight {
@@ -785,12 +847,11 @@ p a:hover {
 }
 
 .desktopRight img {
-  width: 600px;
-  height: 350px;
+  width: 100%;
 }
 
 .textLeft {
-  width: 40%;
+  width: 50%;
   height: 300px;
   padding-top: 50px;
   margin-left: 80px;
