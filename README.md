@@ -8,5 +8,5 @@ website with al the projects i have worked on
 </p>
 
 <p align="center">
-  <img src="[https://github.com/Zeijls/portfolio/blob/master/IMG/GIF.gif" alt="gif" width="200px]">
+  <img src="[https://github.com/Zeijls/IMG/GIF.gif" alt="gif" width="200px]">
 </p>
